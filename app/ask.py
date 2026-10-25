@@ -16,7 +16,6 @@ import argparse
 
 from google import genai
 from google.genai import errors
-
 from app.config import MODEL, api_error_message, get_api_key
 
 # 講座に固有の質問。正しい答えは data/glossary.json の homework-levels にある
@@ -33,10 +32,8 @@ def ask(question: str, chat=None) -> str:
         client, chat = create_chat()
     response = chat.send_message(question)
 
-    usage = response.usage_metadata
-    if usage is not None:
-        print(f"入力トークン数: {usage.prompt_token_count}")
-        print(f"出力トークン数: {usage.candidates_token_count}")
+    # TODO(第1回 演習): response.usage_metadata から
+    #   入力トークン数と出力トークン数を表示してみよう（Copilotに頼んでよい）
 
     return response.text
 

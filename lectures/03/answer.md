@@ -6,7 +6,7 @@
 - `--trace` で見えたツール呼び出し（ツール名と引数）：search_glossary({'query': 'LoRA'})　search_glossary({'query': 'QLoRA'})
 
 - 1つの質問での LLM 呼び出し回数（`requests`）：２回
-- 追加したツールと、docstring に書いた説明：
+- 追加したツールと、docstring に書いた説明： 追加したツール　make_quiz　docstring に書いた説明　よくわからなかった
 
 ## 宿題
 

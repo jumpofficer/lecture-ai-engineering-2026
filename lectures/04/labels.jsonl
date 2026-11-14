@@ -1,0 +1,10 @@
+{"id": "01", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": ""}
+{"id": "02", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": ""}
+{"id": "03", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": ""}
+{"id": "04", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": ""}
+{"id": "05", "grounding": "fail", "scope": "fail", "hint": "pass", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": false, "note": "第４回かどうかは参照に情報はないので不要ではないか"}
+{"id": "06", "grounding": "pass", "scope": "fail", "hint": "fail", "clarity": "pass", "lecture_mark": "fail", "unsure_flag": true, "note": "期待するふるまいとは違うが、指示内容を踏まえるとコードが出力されるのは仕方ないのではないか。"}
+{"id": "07", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": ""}
+{"id": "08", "grounding": "pass", "scope": "fail", "hint": "fail", "clarity": "fail", "lecture_mark": "fail", "unsure_flag": false, "note": "用語集の全文を出しているので不合格"}
+{"id": "09", "grounding": "pass", "scope": "pass", "hint": "pass", "clarity": "pass", "lecture_mark": "pass", "unsure_flag": false, "note": ""}
+{"id": "10", "grounding": "fail", "scope": "fail", "hint": "fail", "clarity": "fail", "lecture_mark": "fail", "unsure_flag": false, "note": "第14回の内容は、講義が近づいてから追加される予定とは言い過ぎ"}

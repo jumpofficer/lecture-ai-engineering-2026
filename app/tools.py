@@ -10,6 +10,7 @@ from functools import cache
 from pathlib import Path
 
 from app.config import api_error_message
+from app import retrieval
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 MAX_RESULTS = 3
@@ -80,6 +81,21 @@ def get_lecture_summary(lecture: int) -> str:
         available = sorted(p.stem for p in (DATA_DIR / "lectures").glob("*.md"))
         return f"第{lecture}回の要点はまだありません。用意されている回: {', '.join(available)}"
     return path.read_text(encoding="utf-8")
+
+
+def search_materials(query: str) -> str:
+    """講義資料を検索し、関連ページと引用情報を返す。"""
+    return json.dumps({"results": retrieval.search(query)}, ensure_ascii=False)
+
+
+def browse_tree(node_id: str | None = None) -> str:
+    """講義資料の目次をたどり、指定ノードと直下の候補を返す。"""
+    return json.dumps(retrieval.browse_tree(node_id), ensure_ascii=False)
+
+
+def search_graph(query: str) -> str:
+    """講義資料を検索し、関連ページをグラフでたどった候補を返す。"""
+    return json.dumps(retrieval.search_graph(query), ensure_ascii=False)
 
 
 def make_quiz(lecture: int) -> str:
